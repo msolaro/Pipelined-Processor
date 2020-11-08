@@ -1,0 +1,67 @@
+# vsim -c tb_SimplifiedMIPSProcessor -do "modelsim_framework.do" 
+# Start time: 00:14:37 on Dec 10,2019
+# //  ModelSim DE-64 10.7b Jun  8 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_simplifiedmipsprocessor(mixed)
+# Loading work.mips_processor(structure)
+# Loading ieee.numeric_std(body)
+# Loading work.mem(rtl)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.if_id_buffer(behavior)
+# Loading work.id_ex_buffer(behavior)
+# Loading work.ex_mem_buffer(behavior)
+# Loading work.mem_wb_buffer(behavior)
+# Loading work.twocmux(structure)
+# Loading work.twobmux(structure)
+# Loading work.invg(dataflow)
+# Loading work.andg2(dataflow)
+# Loading work.org2(dataflow)
+# Loading work.mipsregisterfile(mixed)
+# Loading work.decoder532(dataflow)
+# Loading work.bigmux(dataflow)
+# Loading work.twodmux(structure)
+# Loading work.alushift(mixed)
+# Loading work.alu32bit(behavioral)
+# Loading work.ashifter(structural)
+# Loading work.shifter(structural)
+# Loading work.shiftleft(structural)
+# Loading work.mux4in(dataflow)
+# Loading work.controlunit(behavioral)
+# Loading work.signextender(behavior)
+# Loading work.fulladderstructural(structure)
+# Loading work.fulladder(structure)
+# Loading work.xorg2(dataflow)
+# Loading work.nbitregister(structure)
+# Loading work.gdff(mixed)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_simplifiedmipsprocessor/MySimplifiedMIPSProcess/ALU/alu/overflow has no driver.
+# This port will contribute value (U) to the signal network.
+# do modelsim_framework.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_simplifiedmipsprocessor/MySimplifiedMIPSProcess/DMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_simplifiedmipsprocessor/MySimplifiedMIPSProcess/IMem
+# ** Note: Data structure takes 21532232 bytes of memory
+#          Process time 0.11 seconds
+#          stop
+#    Time: 480 ns  Iteration: 1  Instance: /tb_simplifiedmipsprocessor
+# Break in Process P_DUMP_STATE at U:/cpre381/Proj-C/cpre381-toolflow-release/ModelSimWork/src/tb_SimplifiedMIPSProcessor.vhd line 140
+# Stopped at U:/cpre381/Proj-C/cpre381-toolflow-release/ModelSimWork/src/tb_SimplifiedMIPSProcessor.vhd line 140
+# End time: 00:14:38 on Dec 10,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 3

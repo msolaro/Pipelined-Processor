@@ -1,0 +1,44 @@
+-- Max Solaro
+
+
+
+
+-- Shifter
+
+
+
+
+
+
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all; -- use that, it's a better coding guideline
+
+
+entity shifter is
+generic(N : integer := 32);
+  port(input		: in std_logic_vector(N-1 downto 0);
+	shiftcontrol	: in std_logic_vector(2 downto 0);
+	shiftamt	: in std_logic_vector(4 downto 0);
+        output 		: out std_logic_vector(N-1 downto 0));
+
+end shifter;
+
+
+
+architecture behavioral of shifter is
+
+begin
+
+G1: for i in 0 to N-1 generate
+with shiftcontrol select
+
+output <=
+	std_logic_vector(unsigned(input) sll shiftamt) when "000", -- sll
+	x"00000000" when others;
+
+end generate;
+
+end behavioral;
